@@ -1,17 +1,15 @@
 # Story Generator
 
-Hi there guys! This is n auto Story Generator using Openai and Anthropic's LLMs.(of course you can use different LLMs by changing settings in `settings.py`).
+Hi there guys! This is an auto Story Generator using OpenAI and Anthropic's LLMs (of course you can use different LLMs by changing settings in  `settings.py`).
+
+You can use this to generate a story from a given topic and instruction. See if you can generate a funny story with your own prompts!
+
+You don't need a strong prompt to generate a story———all prompts and arguments are already prepared for you. If you're not familiar with running code in the shell, you can use  `test.ipynb` notebook to execute the program. Alternatively, follow the steps below.
 
 
-You can use this to generate a story from a given topic and a given instruction, see if you can generate a funny story with your instruction and topic:)
+You'll notice a `result.json` file in this directory. This is just an example to show you where the final output will be saved. You can delete this file and generate your own story.
 
-
-You don't need strong prompt to generate story, all prompts and args are already prepared for you.
-If you're not familiar with running code in shell, you can use `test.py` to run the code. Or, following these steps below.
-
-You could see we put a `result.json` file under this document, this's just a file example to show you where the final output goes to. You can delete this file anyway and generate your own story there.
-
-Just for instance, we didn't put many args in bash example below. If you want to change any other params, please go to `setting.py` file to edit them.
+Note that the bash example below doesn't include all possible arguments. If you want to modify other parameters, please edit the `settings.py` file.
 
 ## 1 environment setup
 Python 3.10 is a good choice for this project, because this is the version I use.
