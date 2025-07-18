@@ -5,7 +5,7 @@ Hi there guys! This is an auto Story Generator using OpenAI and Anthropic's LLMs
 You can use this to generate a story from a given topic and instruction. See if you can generate a funny story with your own prompts!
 
 The structure of this project:
-```
+
 StoryGenerator
 ├── End
 │   ├── EndsGenerate.py          # Python script responsible for generating the ending of the story. It may invoke LLMs to produce a conclusion that meets the requirements.
@@ -38,7 +38,6 @@ StoryGenerator
 ├── settings.py                  # Project configuration file containing LLM API configurations, path settings, default parameter values, etc.
 ├── test.ipynb                   # Jupyter Notebook file that provides project running examples and test code for users to quickly get started.
 └── utils.py                     # Utility function file containing environment variable settings, text processing, helper functions, etc.
-```
 
 You don't need a strong prompt to generate a story———all prompts and arguments are already prepared for you. If you're not familiar with running code in the shell, you can use  `test.ipynb` notebook to execute the program. Alternatively, follow the steps below.
 
