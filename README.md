@@ -4,6 +4,42 @@ Hi there guys! This is an auto Story Generator using OpenAI and Anthropic's LLMs
 
 You can use this to generate a story from a given topic and instruction. See if you can generate a funny story with your own prompts!
 
+The structure of this project:
+```
+StoryGenerator
+├── End
+│   ├── EndsGenerate.py          # Python script responsible for generating the ending of the story. It may invoke LLMs to produce a conclusion that meets the requirements.
+│   ├── __init__.py              # Python package initialization file that makes the End directory an importable package.
+│   └── build.py                 # Builds the graph structure or modules related to story ending generation, possibly for resource integration.
+├── Expender
+│   ├── ExpenderWriterSimulator.py # Implements the core logic for story expansion. It invokes LLMs to generate expanded stories, handles retry logic, and updates outlines.
+│   ├── Interact.py              # Handles the interaction logic during the story expansion process, which may include user input processing and feedback mechanisms.
+│   ├── ReaderSimulator.py       # Simulates readers to evaluate the story and provides feedback on logical and character growth issues.
+│   ├── __init__.py              # Python package initialization file that makes the Expender directory an importable package.
+│   └── build.py                 # Builds the graph structure or components of the story expansion module to organize the expansion process.
+├── Memory
+│   ├── MemoryStore.py           # Manages the memory storage of the story, which may be used to store historical stories, outlines, and other information.
+│   └── __init__.py              # Python package initialization file that makes the Memory directory an importable package.
+├── PlainGenerator
+│   ├── PlainGenerate.py         # Python script for generating standard story paragraphs. It invokes LLMs to produce paragraphs that meet the specifications.
+│   ├── PlainWritingAssistant.py # Assists in generating standard story paragraphs by providing writing suggestions or templates.
+│   └── __init__.py              # Python package initialization file that makes the PlainGenerator directory an importable package.
+├── StoryStarter
+│   ├── StoryStartGenerate.py    # Python script responsible for generating the beginning of the story, determining the starting plot.
+│   └── __init__.py              # Python package initialization file that makes the StoryStarter directory an importable package.
+├── TwistGenerator
+│   ├── TwistGenerate.py         # Python script for generating plot twists in the story, adding dramatic elements.
+│   └── __init__.py              # Python package initialization file that makes the TwistGenerator directory an importable package.
+├── MainGraph.py                 # Builds the main graph structure for story generation, integrating various sub - modules (such as beginning, expansion, twist, ending, etc.).
+├── StoryState.py                # Defines the data structure of the story state, using TypedDict or other methods to standardize state information.
+├── main.py                      # The main entry point of the project. It parses command - line arguments and invokes the main graph to start the story generation process.
+├── README.md                    # Project documentation that introduces the project's functionality, environment setup steps, running commands, etc.
+├── requirements.txt             # Lists the Python dependencies and their versions required for the project to run.
+├── settings.py                  # Project configuration file containing LLM API configurations, path settings, default parameter values, etc.
+├── test.ipynb                   # Jupyter Notebook file that provides project running examples and test code for users to quickly get started.
+└── utils.py                     # Utility function file containing environment variable settings, text processing, helper functions, etc.
+```
+
 You don't need a strong prompt to generate a story———all prompts and arguments are already prepared for you. If you're not familiar with running code in the shell, you can use  `test.ipynb` notebook to execute the program. Alternatively, follow the steps below.
 
 
