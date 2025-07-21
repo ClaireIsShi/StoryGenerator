@@ -50,17 +50,17 @@ Note that the bash example below doesn't include all possible arguments. If you 
 Python 3.10 is a good choice for this project, because this is the version I use.
 
 ## 2 install packages
-```bash
+```
 pip install -r requirements.txt
 ```
 ## 3 run in bash
 After install all required packages, you can run 
-```bash
+```
 python main.py --OPENAI_API_KEY your_key --ANTHROPIC_API_KEY your_key\
 --MAIN_CHARACTOR your_own_character --TOPIC your_story_topic --MAIN_GOAL your_character_main_goal --LANGUAGE your_language
 ```
 or just run
-```bash
+```
 python main.py --OPENAI_API_KEY your_key --ANTHROPIC_API_KEY your_key
 ```
 For a sample example, an English love-fiction.
