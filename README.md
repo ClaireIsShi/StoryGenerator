@@ -4,7 +4,7 @@ Hi there guys! This is an auto Story Generator using OpenAI and Anthropic's LLMs
 
 You can use this to generate a story from a given topic and instruction. See if you can generate a funny story with your own prompts!
 
-# The structure of this project
+# Structure
 ```
 StoryGenerator
 ├── End
