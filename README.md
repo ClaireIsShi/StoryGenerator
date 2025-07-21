@@ -4,7 +4,7 @@ Hi there guys! This is an auto Story Generator using OpenAI and Anthropic's LLMs
 
 You can use this to generate a story from a given topic and instruction. See if you can generate a funny story with your own prompts!
 
-The structure of this project:
+# The structure of this project
 ```
 StoryGenerator
 ├── End
@@ -45,7 +45,7 @@ You don't need a strong prompt to generate a story———all prompts and argum
 You'll notice a `result.json` file in this directory. This is just an example to show you where the final output will be saved. You can delete this file and generate your own story.
 
 Note that the bash example below doesn't include all possible arguments. If you want to modify other parameters, please edit the `settings.py` file.
-
+# How to run this project?
 ## 1 environment setup
 Python 3.10 is a good choice for this project, because this is the version I use.
 
