@@ -63,7 +63,7 @@ Output your result in the following format, don't change the format, English, su
 ## END
 """
 
-def generate_twist(language: str, topic: str, KG:str, length = 500, llm = ChatOpenAI(model="gpt-3.5-turbo",temperature=0.8)) -> str:
+def generate_twist(language: str, topic: str, KG:str, length = 500, llm = UTIL_LLM) -> str:
     prompt_generate = GENERATE_TWIST_PRMPT.format(language=language, KG=KG, topic=topic,length=length)
     story = llm.invoke(prompt_generate).content
     return story
