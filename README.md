@@ -37,10 +37,11 @@ StoryGenerator
 ├── README.md
 ├── requirements.txt
 ├── settings.py
+├── result.json
 ├── test.ipynb
 └── utils.py
 ```
-You don't need a strong prompt to generate a story———all prompts and arguments are already prepared for you. If you're not familiar with running code in the shell, you can use  `test.ipynb` notebook to execute the program. Alternatively, follow the steps below.
+You don't need a strong prompt to generate a story———all prompts and arguments are already prepared for you. If you're not familiar with running code in the shell, you could use  `test.ipynb` notebook to execute the program. Alternatively, follow the steps below.
 
 
 You'll notice a `result.json` file in this directory. This is just an example to show you where the final output will be saved. You can delete this file and generate your own story.
@@ -48,7 +49,7 @@ You'll notice a `result.json` file in this directory. This is just an example to
 Note that the bash example below doesn't include all possible arguments. If you want to modify other parameters, please edit the `settings.py` file.
 # How to run this project?
 ## 1 environment setup
-Python 3.10 is a good choice for this project, because this is the version I use.
+Python 3.10 is a good choice for this project that is the version I use.
 
 ## 2 install packages
 ```
@@ -64,4 +65,5 @@ or just run
 ```
 python main.py --OPENAI_API_KEY your_key --ANTHROPIC_API_KEY your_key
 ```
-For a sample example, an English love-fiction.
+For a sample example, this line generates an English love-fiction.
+If you don't have keys, you can visit[anthropic]<https://www.anthropic.com>and[opneai]<https://openai.com> to get keys.
